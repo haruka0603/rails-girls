@@ -6,11 +6,11 @@ ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # Use sqlite3 as the database for Active Record
-group :development do
+group :development, :test do
   gem 'sqlite3', '~> 1.4'
 end
 group :production do
-  gem 'pg'
+  gem 'pg','0.20.0'
 end
 
 gem 'carrierwave'
@@ -61,3 +61,6 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'bootstrap', '~> 5.0.0.alpha1'
+gem 'jquery-rails'
